@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hust-eval-client-frontierscience"
+version = "0.3.0"
+description = "FrontierScience solver, Qwen judge, benchmark and evidence client"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+hust-eval-frontierscience = "hust_eval_frontierscience.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
